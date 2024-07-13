@@ -1,12 +1,19 @@
 {
   "name": "messagegenerator",
-  "version": "0.0.1",
+  "bin": {
+    "gen": "./dist/index.js"
+  },
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "link-cli": "pnpm unlink --global messagegenerator && pnpm --global link",
+    "dev": "tsc -w"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Jack Davidson",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
 }
